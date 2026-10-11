@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Căn giữa hoàn hảo với Flexbox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center; /* Căn giữa theo trục ngang (main axis) */
+      align-items: center;     /* Căn giữa theo trục dọc (cross axis) */
+      background-color: #f0f2f5;
+    }
+
+    .center-card {
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .center-card h3 {
+      margin-bottom: 12px;
+      color: #1a1a1a;
+      font-size: 1.5rem;
+    }
+
+    .center-card p {
+      color: #65676b;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="center-card">
+      <h3>Căn giữa hoàn hảo!</h3>
+      <p>Phần tử này nằm chính giữa khung nhìn màn hình.</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
